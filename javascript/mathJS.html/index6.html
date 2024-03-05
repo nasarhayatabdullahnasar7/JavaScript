@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <h2>Arithmetic Operations</h2>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput">
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p>
+
+
+    <h2>Greeting Program</h2>
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput">
+    <button onclick="greet()">Greet</button>
+    <p id="greeting"></p>
+
+    <script>
+        function calculate() {
+            // Get the input value
+            var number = parseFloat(document.getElementById("numberInput").value);
+
+            // Perform arithmetic operations
+            var square = number * number;
+            var cube = number * number * number;
+            var squareRoot = Math.sqrt(number);
+
+            // Display the results
+            var resultText = "Square: " + square + "<br>" +
+                             "Cube: " + cube + "<br>" +
+                             "Square Root: " + squareRoot;
+
+            document.getElementById("result").innerHTML = resultText;
+        }
+
+
+
+   
+             //Greeting Program//
+    
+        function greet() {
+            // Get the input value
+            var name = document.getElementById("nameInput").value;
+
+            // Greet the user
+            var greetingText = "Hello, " + name + "! Welcome.";
+
+            document.getElementById("greeting").innerHTML = greetingText;
+        }
+
+         //Greeting Program//
+
+
+         var input =prompt("Your name:","barjees")
+
+    </script>
+</body>
+</html>
